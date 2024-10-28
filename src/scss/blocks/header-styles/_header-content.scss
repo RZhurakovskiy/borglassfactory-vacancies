@@ -30,10 +30,15 @@
     margin-left: 20px;
     margin-bottom: 50px;
   }
-  &__buttons a {
-    font-weight: 400;
+  &__button-vacancy a {
+    font-weight: 600;
     font-size: 20px;
-    color: #e8e8e8;
+    color: #ffffff;
+  }
+  &__button-about a {
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
   }
   &__button-vacancy {
     border-radius: 35px;
@@ -68,9 +73,7 @@
       margin-bottom: 50px;
     }
     &__buttons a {
-      font-weight: 400;
       font-size: 16px;
-      color: #e8e8e8;
     }
     &__button-vacancy {
       width: 156px;
@@ -84,37 +87,31 @@
   }
 }
 
-@media(max-width: 640px) {
-	.header-content {
-
+@media (max-width: 640px) {
+  .header-content {
     max-width: 294px;
     margin-top: 100px;
     margin-left: 80px;
-  
+
     &__title {
       font-weight: 700;
       font-size: 20px;
       color: #e8e8e8;
       margin-bottom: 20px;
     }
-  
+
     &__subtitle {
       font-size: 13px;
     }
-    &__buttons a {
-      font-weight: 400;
-      font-size: 16px;
-      color: #e8e8e8;
-    }
+
     &__button-vacancy {
       width: 126px;
       height: 38px;
     }
-  
+
     &__button-about {
       width: 126px;
       height: 38px;
     }
- 
   }
 }
