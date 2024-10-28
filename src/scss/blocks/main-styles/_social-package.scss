@@ -65,14 +65,14 @@
   }
 }
 @media (max-width: 640px) {
-	.socialpackage {
-	  &__title {
-		 font-size: 32px;
-	  }
-	}
+  .socialpackage {
+    &__title {
+      font-size: 32px;
+    }
+  }
   .socialpackage-grid {
     grid-template-columns: repeat(auto-fill, 100px);
-}
+  }
   .socialpackage-card {
     width: 100px;
     &__text {
@@ -83,13 +83,17 @@
       height: 70px;
     }
   }
+}
 
- }
-
- @media (max-width: 460px) {
-	.socialpackage {
+@media (max-width: 460px) {
+  .socialpackage {
     margin-top: 20px;
-	}
-
-
- }
+  }
+}
+.svg-decor-element {
+  max-width: 800px;
+  width: 100%;
+  padding: 0 15px;
+  display: flex;
+  margin: 0 auto;
+}
