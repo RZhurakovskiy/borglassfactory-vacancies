@@ -1,43 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Вакансии Борский стекольный завод — ведущий производитель автомобильного стекла в России</title>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Вакансии Борский стекольный завод — ведущий производитель автомобильного стекла в России</title>
 
-  <meta name="description" content="Просмотр вакансий на Борском стекольном заводе. Ведущий производитель автомобильного стекла в России. Присоединяйтесь к нашей команде!" />
-  <meta name="keywords" content="вакансии, Борский стекольный завод, работа, автомобильное стекло, производитель, работа в России" />
-  <meta name="author" content="Борский стекольный завод" />
+    <meta
+      name="description"
+      content="Просмотр вакансий на Борском стекольном заводе. Ведущий производитель автомобильного стекла в России. Присоединяйтесь к нашей команде!"
+    />
+    <meta name="keywords" content="вакансии, Борский стекольный завод, работа, автомобильное стекло, производитель, работа в России" />
+    <meta name="author" content="Борский стекольный завод" />
 
-  <meta property="og:title" content="Вакансии Борский стекольный завод" />
-  <meta property="og:description" content="Просмотр вакансий на Борском стекольном заводе. Присоединяйтесь к нашей команде!" />
-  <meta property="og:type" content="website" />
+    <meta property="og:title" content="Вакансии Борский стекольный завод" />
+    <meta property="og:description" content="Просмотр вакансий на Борском стекольном заводе. Присоединяйтесь к нашей команде!" />
+    <meta property="og:type" content="website" />
 
-  <link rel="stylesheet" href="./css/main.css" />
-</head>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
 
-<body>
-  @@include('blocks/preloader.html')
+  <body>
+    @@include('blocks/preloader.html')
 
-  <header class="header">
-    <div class="header-shape">
-      @@include('blocks/header/navigation.html') @@include('blocks/header/header-content.html')
+    <div class="cookie-consent-banner" id="cookieConsent" style="display: none;">
+      <p>
+        Мы используем файлы cookie для улучшения работы сайта. Продолжая пользоваться сайтом, вы даёте согласие на использование файлов
+        cookie.
+      </p>
+      <button id="acceptCookie">Согласиться</button>
     </div>
-  </header>
-  <main class="main">
 
-    <div class="main-container">
-      @@include('blocks/main/about-company.html') @@include('blocks/main/core-values.html')
-      @@include('blocks/main/social-package.html') @@include('blocks/main/corparative-life.html') @@include('blocks/main/vacansy.html')
-    </div>
-    @@include('blocks/main/svg-decorelement.html')
-  </main>
+    <header class="header">
+      <div class="header-shape">
+        @@include('blocks/header/navigation.html') @@include('blocks/header/header-content.html')
+      </div>
+    </header>
+    <main class="main">
+      <div class="main-container">
+        @@include('blocks/main/about-company.html') @@include('blocks/main/core-values.html') @@include('blocks/main/social-package.html')
+        @@include('blocks/main/corparative-life.html') @@include('blocks/main/vacansy.html')
+      </div>
+      @@include('blocks/main/svg-decorelement.html')
+    </main>
 
-  <footer class="footer" id="contacts">
-    @@include('blocks/footer/footer.html')
-  </footer>
+    <footer class="footer" id="contacts">
+      @@include('blocks/footer/footer.html')
+    </footer>
 
-  <script src="./js/index.bundle.js"></script>
-</body>
+    <script src="./js/index.bundle.js"></script>
+  </body>
 </html>
