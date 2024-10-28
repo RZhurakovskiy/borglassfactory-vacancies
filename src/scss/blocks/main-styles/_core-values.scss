@@ -8,14 +8,14 @@
   }
 }
 .corevalues-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 710px);
-  gap: 0 45px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 .corevalues-card {
+  max-width: 710px;
+  width: 100%;
+  margin: 0 auto;
+
   &__title {
     display: flex;
     align-items: last baseline;
