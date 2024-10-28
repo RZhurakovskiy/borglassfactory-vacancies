@@ -78,6 +78,8 @@
 
 @media (max-width: 640px) {
   .corevalues {
+    margin-top: 20px;
+    margin-bottom: 80px;
     &__title {
       font-size: 32px;
     }
@@ -93,5 +95,12 @@
     &__text p {
       font-size: 14px;
     }
+  }
+}
+
+@media (max-width: 460px) {
+  .corevalues {
+    margin-top: 20px;
+    margin-bottom: 0;
   }
 }
