@@ -75,3 +75,23 @@
     }
   }
 }
+
+@media (max-width: 640px) {
+  .corevalues {
+    &__title {
+      font-size: 32px;
+    }
+  }
+  .corevalues-card {
+    &__title span {
+      font-size: 120px;
+    }
+    &__title span::after {
+      width: 60px;
+      height: 60px;
+    }
+    &__text p {
+      font-size: 14px;
+    }
+  }
+}

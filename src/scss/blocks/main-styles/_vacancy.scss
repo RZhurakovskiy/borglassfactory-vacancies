@@ -221,4 +221,25 @@
       margin-bottom: 20px;
     }
   }
+
+  .vacancy-filter {
+    grid-template-columns: repeat(auto-fill, 220px);
+  }
+  .tab-button {
+    width: 220px;
+    height: 40px;
+  }
+}
+@media (max-width: 640px) {
+  .vacancy {
+    &__title {
+      font-size: 32px;
+    }
+    &__subtitile {
+      font-size: 14px;
+    }
+  }
+  .vacancy-filter {
+    display: none;
+  }
 }
