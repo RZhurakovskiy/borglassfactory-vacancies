@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Вакансии Борский стекольный завод — ведущий производитель автомобильного стекла в России</title>
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Вакансии Борский стекольный завод — ведущий производитель автомобильного стекла в России</title>
 
-  <body>
+  <meta name="description" content="Просмотр вакансий на Борском стекольном заводе. Ведущий производитель автомобильного стекла в России. Присоединяйтесь к нашей команде!" />
+  <meta name="keywords" content="вакансии, Борский стекольный завод, работа, автомобильное стекло, производитель, работа в России" />
+  <meta name="author" content="Борский стекольный завод" />
 
-    @@include('blocks/preloader.html')
+  <meta property="og:title" content="Вакансии Борский стекольный завод" />
+  <meta property="og:description" content="Просмотр вакансий на Борском стекольном заводе. Присоединяйтесь к нашей команде!" />
+  <!-- <meta property="og:image" content="" /> -->
+  <!-- <meta property="og:url" content="" /> -->
+  <meta property="og:type" content="website" />
 
-    <header class="header">
-      <div class="header-shape">
-        @@include('blocks/header/navigation.html') @@include('blocks/header/header-content.html')
-      </div>
-      
-    </header>
-    <main class="main">
-      <div class="main-container">
-        @@include('blocks/main/about-company.html') 
-        @@include('blocks/main/core-values.html') 
-        @@include('blocks/main/svg-decorelement.html') 
-        @@include('blocks/main/social-package.html')
-        @@include('blocks/main/corparative-life.html') 
-        @@include('blocks/main/vacansy.html')
+ 
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
 
-  
-      </div>
-    </main>
-    <footer class="footer" id="contacts">
-      @@include('blocks/footer/footer.html')
-    </footer>
+<body>
+  @@include('blocks/preloader.html')
 
+  <header class="header">
+    <div class="header-shape">
+      @@include('blocks/header/navigation.html') @@include('blocks/header/header-content.html')
+    </div>
+  </header>
+  <main class="main">
+    <div class="main-container">
+      @@include('blocks/main/about-company.html') @@include('blocks/main/core-values.html') @@include('blocks/main/svg-decorelement.html')
+      @@include('blocks/main/social-package.html') @@include('blocks/main/corparative-life.html') @@include('blocks/main/vacansy.html')
+    </div>
+  </main>
+  <footer class="footer" id="contacts">
+    @@include('blocks/footer/footer.html')
+  </footer>
 
-    
-      
-
-    <script src="./js/index.bundle.js"></script>
-  </body>
+  <script src="./js/index.bundle.js"></script>
+</body>
 </html>
