@@ -1,0 +1,77 @@
+.corevalues {
+  margin-top: 40px;
+  margin-bottom: 100px;
+  &__title {
+    font-size: 48px;
+    color: #161616;
+    font-weight: 700;
+  }
+}
+.corevalues-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 710px);
+  gap: 0 45px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.corevalues-card {
+  &__title {
+    display: flex;
+    align-items: last baseline;
+    margin-bottom: -50px;
+    z-index: 2;
+  }
+  &__title span {
+    font-family: "Koulen", sans-serif;
+    font-weight: 400;
+    font-size: 160px;
+    color: #161616;
+    position: relative;
+    z-index: 1;
+  }
+  &__title span::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #ec0000;
+    left: 0%;
+    bottom: 30%;
+    z-index: -1;
+  }
+  &__title h3 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #000;
+  }
+  &__text p {
+    font-size: 16px;
+    color: #000;
+  }
+}
+
+.decor-element {
+  width: 1076px;
+  height: 130px;
+  display: flex;
+  margin: 0 auto;
+  stroke-dasharray: 4000;
+  stroke-dashoffset: 4000;
+}
+.decor-element.animate {
+  animation: draw 5s forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@media (max-width: 1300px) {
+  .corevalues {
+    &__title {
+      font-size: 38px;
+    }
+  }
+}

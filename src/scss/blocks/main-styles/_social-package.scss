@@ -1,0 +1,66 @@
+.socialpackage-container {
+  max-width: 1165px;
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+.socialpackage {
+  margin-top: 80px;
+  margin-bottom: 80px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    color: #161616;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+.socialpackage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  gap: 80px 45px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.socialpackage-card {
+  width: 250px;
+  &__icon {
+    margin-bottom: 30px;
+  }
+  &__icon img {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #000;
+  }
+}
+
+@media (max-width: 1300px) {
+  .socialpackage {
+    &__title {
+      font-size: 38px;
+    }
+  }
+  .socialpackage-grid {
+    grid-template-columns: repeat(auto-fill, 200px);
+  }
+  .socialpackage-card {
+    width: 200px;
+    &__icon {
+      margin-bottom: 30px;
+    }
+    &__icon img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+}

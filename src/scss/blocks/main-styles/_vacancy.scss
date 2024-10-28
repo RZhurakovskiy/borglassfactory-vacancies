@@ -1,0 +1,224 @@
+.vacancy {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  overflow: hidden;
+  border-radius: 71px;
+  background-color: #f6f6f6;
+  padding: 50px;
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    color: #161616;
+    margin-bottom: 10px;
+  }
+
+  &__subtitile {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 40px;
+  }
+}
+.vacancy-filter {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  gap: 20px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.tab-button {
+  width: 250px;
+  height: 40px;
+  font-size: 14px;
+  border: 2px solid #161616;
+  border-radius: 35px;
+  transition: all 0.3s ease-in-out;
+}
+.tab-button.active {
+  background-color: #161616;
+  color: #f6f6f6;
+}
+
+.vacancy-card {
+  position: absolute;
+  top: 0;
+  background-color: #161616;
+  color: #f6f6f6;
+  max-width: 1400px;
+  width: 100%;
+  height: 100%;
+
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  padding: 70px;
+  border-radius: 60px;
+  overflow: hidden;
+  &__item {
+    position: relative;
+    min-height: 750px;
+  }
+  &__header {
+    display: flex;
+    align-items: last baseline;
+    column-gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  &__number {
+    font-family: "Koulen", sans-serif;
+    font-weight: 400;
+    font-size: 76px;
+    color: #e8e8e8;
+    position: relative;
+  }
+  &__number::after {
+    content: "";
+    position: absolute;
+    right: 48%;
+    bottom: 23%;
+    background-color: #ec0000;
+    width: 50px;
+    height: 50px;
+    z-index: -1;
+  }
+  &__title h4 {
+    font-weight: 700;
+    font-size: 48px;
+  }
+  &__title p {
+    font-weight: 300;
+    font-size: 16px;
+  }
+  &__description {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  &__description-item h4 {
+    font-size: 18px;
+    color: #e8e8e8;
+    margin-bottom: 20px;
+  }
+
+  &__description-item:nth-child(1) {
+    max-width: 250px;
+    width: 100%;
+  }
+  &__description-item:nth-child(2) {
+    max-width: 300px;
+    width: 100%;
+    border-right: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  &__description-item:nth-child(3) {
+    max-width: 400px;
+    width: 100%;
+  }
+  &__description-list li {
+    font-size: 16px;
+    color: #e8e8e8;
+    padding-bottom: 30px;
+  }
+}
+.vacancy-card.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.vacancy-card::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -10%;
+  width: 1800px;
+  height: 1000px;
+  background-image: url(../../../img/main-images/vacancy-vector.svg);
+  border-radius: inherit;
+  z-index: -1;
+  animation: moveBackground 5s infinite alternate;
+}
+
+@keyframes moveBackground {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 1300px) {
+  .vacancy {
+    &__title {
+      font-size: 38px;
+    }
+    &__subtitile {
+      font-size: 14px;
+    }
+  }
+  .vacancy-card {
+    &__title h4 {
+      font-size: 38px;
+    }
+    &__title p {
+      font-size: 14px;
+    }
+    &__description-list li {
+      font-size: 14px;
+    }
+  }
+}
+@media (max-width: 1259px) {
+  .vacancy-card {
+    padding: 70px;
+    &__item {
+      min-height: 1200px;
+    }
+
+    &__description-item:nth-child(2) {
+      border-left: 1px solid #fff;
+      border-right: none;
+    }
+  }
+}
+@media (max-width: 860px) {
+  .vacancy-card {
+    &__item {
+      min-height: 1300px;
+    }
+    &__description {
+      display: block;
+    }
+    &__description-item:nth-child(2) {
+      border-left: none;
+      padding-left: 0;
+      padding-right: 0;
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}
