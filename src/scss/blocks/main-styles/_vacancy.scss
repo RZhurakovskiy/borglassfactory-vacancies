@@ -93,6 +93,7 @@
   &__item {
     position: relative;
     min-height: 750px;
+    height: 100%;
   }
   &__header {
     display: flex;
@@ -225,9 +226,7 @@
 @media (max-width: 1259px) {
   .vacancy-card {
     padding: 70px;
-    &__item {
-      min-height: 1200px;
-    }
+
 
     &__description-item:nth-child(2) {
       border-left: 1px solid #fff;
@@ -237,9 +236,7 @@
 }
 @media (max-width: 860px) {
   .vacancy-card {
-    &__item {
-      min-height: 1300px;
-    }
+
     &__description {
       display: block;
     }
@@ -265,7 +262,7 @@
 }
 @media (max-width: 640px) {
   .vacancy {
-    padding: 20px;
+    padding: 30px;
     &__title {
       font-size: 32px;
     }
@@ -289,7 +286,7 @@
 
 @media (max-width: 540px) {
   .vacancy-card {
-    padding: 40px;
+    padding: 35px;
     &__title h4 {
       font-size: 22px;
     }
@@ -311,9 +308,15 @@
 
 @media (max-width: 540px) {
   .vacancy {
-    padding: 15px;
+    padding: 25px;
+ 
+
   }
   .vacancy-card {
+    &__item {
+      min-height: 1000px;
+   
+    }
     &__header {
       column-gap: 8px;
     }
