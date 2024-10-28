@@ -42,16 +42,16 @@
   }
   &__button-vacancy {
     border-radius: 35px;
-    width: 216px;
-    height: 47px;
+    width: 236px;
+    height: 57px;
     background-color: #ec0000;
-    margin-right: 20px;
+    margin-right: 30px;
   }
 
   &__button-about {
     border-radius: 35px;
-    width: 216px;
-    height: 47px;
+    width: 236px;
+    height: 57px;
     border: 1px solid #fff;
     transition: all 0.2s ease-in;
   }
@@ -76,22 +76,22 @@
       font-size: 16px;
     }
     &__button-vacancy {
-      width: 156px;
-      height: 37px;
-      margin-right: 15px;
+      width: 176px;
+      height: 47px;
+
     }
     &__button-about {
-      width: 156px;
-      height: 37px;
+      width: 176px;
+      height: 47px;;
     }
   }
 }
 
 @media (max-width: 640px) {
   .header-content {
-    max-width: 294px;
+    max-width: 354px;
     margin-top: 100px;
-    margin-left: 80px;
+  
 
     &__title {
       font-weight: 700;
@@ -105,13 +105,26 @@
     }
 
     &__button-vacancy {
+      width: 136px;
+      height: 42px;
+    }
+
+    &__button-about {
+      width: 136px;
+      height: 42px;
+    }
+  }
+}
+@media(max-width: 360px) {
+  .header-content {
+    &__button-vacancy {
       width: 126px;
-      height: 38px;
+      height: 36px;
     }
 
     &__button-about {
       width: 126px;
-      height: 38px;
+      height: 36px;
     }
   }
 }
