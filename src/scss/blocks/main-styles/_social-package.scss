@@ -70,9 +70,18 @@
 		 font-size: 32px;
 	  }
 	}
+  .socialpackage-grid {
+    grid-template-columns: repeat(auto-fill, 100px);
+}
   .socialpackage-card {
+    width: 100px;
     &__text {
       font-size: 14px;
     }
+    &__icon img {
+      width: 70px;
+      height: 70px;
+    }
   }
+
  }

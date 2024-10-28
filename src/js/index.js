@@ -1,6 +1,7 @@
-import tabsFilter from "./modules/tabsFilter"
+import tabsFilter from "./modules/tabsFilter.js"
+import selectFilter from "./modules/selectFilter.js"
 import initializePreloader from "./modules/preloader.js";
-import mobileMenu from "./modules/mobileMenu.js"
+import mobileMenu from "./modules/mobileMenu.js" 
 
 initializePreloader()
 
@@ -9,7 +10,7 @@ tabsFilter()
 // мобильное меню
 
 mobileMenu();
-
+selectFilter()
 
 
 
