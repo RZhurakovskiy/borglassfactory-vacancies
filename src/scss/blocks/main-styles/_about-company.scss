@@ -44,11 +44,7 @@
     width: 160px;
     text-align: left;
   }
-  &__text div {
-    font-weight: 400;
-    font-size: 140px;
-    color: #161616;
-  }
+
   &__count1 {
     width: 250px;
   }
@@ -65,6 +61,11 @@
     max-width: 680px;
     width: 100%;
   }
+}
+.number-count {
+    font-weight: 400;
+    font-size: 140px;
+    color: #161616;
 }
 .pseudo-1 {
   position: absolute;
@@ -181,9 +182,7 @@
       width: 150px;
       text-align: left;
     }
-    &__text div {
-      font-size: 90px;
-    }
+
     &__count1 {
       width: 150px;
     }
@@ -198,6 +197,9 @@
     &__image img {
       max-width: 520px;
     }
+    .number-count {
+      font-size: 90px;
+  }
   }
   .pseudo-3 {
     right: 50%;
@@ -250,9 +252,7 @@
       width: 130px;
       text-align: left;
     }
-    &__text div {
-      font-size: 38px;
-    }
+
     &__count1 {
       width: 70px;
     }
@@ -264,6 +264,9 @@
     }
     &__image img {
       max-width: 520px;
+    }
+    .number-count {
+      font-size: 38px;
     }
   }
   .pseudo-3 {
