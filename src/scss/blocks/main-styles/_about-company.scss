@@ -67,6 +67,11 @@
     font-size: 140px;
     color: #161616;
 }
+.number-symbol {
+  font-weight: 400;
+  font-size: 140px;
+  color: #161616;
+}
 .pseudo-1 {
   position: absolute;
 
@@ -200,6 +205,9 @@
     .number-count {
       font-size: 90px;
   }
+  .number-symbol {
+    font-size: 90px;
+  }
   }
   .pseudo-3 {
     right: 50%;
@@ -266,6 +274,9 @@
       max-width: 520px;
     }
     .number-count {
+      font-size: 38px;
+    }
+    .number-symbol {
       font-size: 38px;
     }
   }
