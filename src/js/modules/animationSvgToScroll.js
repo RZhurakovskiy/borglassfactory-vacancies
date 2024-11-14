@@ -4,7 +4,7 @@ export default function animationSvgToScroll(targetSelector = ".decor-element", 
 		 const element = entry.target;
 		 if (entry.isIntersecting) {
 			element.classList.remove(animationClass);
-			void element.offsetWidth; // Вынуждает перерасчет стиля
+			void element.offsetWidth;
 			element.classList.add(animationClass);
 		 } else {
 			element.classList.remove(animationClass);
