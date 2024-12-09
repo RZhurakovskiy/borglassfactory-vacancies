@@ -229,6 +229,9 @@
 }
 
 @media (max-width: 540px) {
+  .vacancy {
+    padding: 0;
+  }
   .vacancy-card {
     padding: 35px;
     &__number {
@@ -241,12 +244,6 @@
     &__description-item h4 {
       font-size: 16px;
     }
-  }
-}
-
-@media (max-width: 540px) {
-  .vacancy {
-    padding: 25px;
   }
 }
 
