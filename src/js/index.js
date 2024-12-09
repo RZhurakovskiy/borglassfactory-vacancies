@@ -14,6 +14,7 @@ animationSvgToScroll();
 startSlideShow();
 initCounterObserver();
 
+
 function setCookie(name, value, days) {
   var expires = "";
   if (days) {
@@ -45,3 +46,4 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 });
+

@@ -111,7 +111,7 @@
 				<div class="header-container">
 					<div class="header-content">
 						<h1 class="header-content__title">
-							Борский стекольный завод&#160;&#8212; ведущий производитель автомобильного стекла в&#160;России с&#160;1931212124 года
+							Борский стекольный завод&#160;&#8212; ведущий производитель автомобильного стекла в&#160;России с&#160;<span>1934</span> года
 						</h1>
 						<h2 class="header-content__subtitle">
 							Сохраняя лучшее, создаем новое!
@@ -842,6 +842,10 @@
 		<footer class="footer" id="contacts">
 			<div class="main-container">
 				<h2 class="footer__title">Контакты для связи</h2>
+				<div class="footer__maps">
+					<div id="map" style="width: 100%; height: 400px;"></div>
+				</div>
+				<div class="footer__line"></div>
 				<div class="footer-contacts">
 					<ul class="footer-contacts__list">
 						<li><a href="tel:+79101218935 ">+7&#160;910&#160;121-89-35</a></li>
@@ -861,17 +865,30 @@
 				</div>
 
 				<div class="footer-icons">
-					<div class="footer-icons__link">
-						<img src="./img/footer-icon/vk.svg" alt="Иконка с ссылкой на vk.com" />
-					</div>
-					<div class="footer-icons__link">
-						<img src="./img/footer-icon/telegram.svg" alt="Иконка с ссылкой на мессенджер telegram" />
-					</div>
-					<div class="footer-icons__link">
-						<img src="./img/footer-icon/whatsapp.svg" alt="Иконка с ссылкой на мессенджер whatsapp" />
-					</div>
+					<img class="footer-icons__link" src="./img/footer-icon/vk.svg" alt="Иконка с ссылкой на vk.com" />
+
+					<img class="footer-icons__link" src="./img/footer-icon/telegram.svg" alt="Иконка с ссылкой на мессенджер telegram" />
+
+					<img class="footer-icons__link" src="./img/footer-icon/whatsapp.svg" alt="Иконка с ссылкой на мессенджер whatsapp" />
 				</div>
 			</div>
+			<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+			<script type="text/javascript">
+				ymaps.ready(init);
+				function init() {
+					var map = new ymaps.Map("map", {
+						center: [56.334612, 44.103409],
+						zoom: 15,
+						controls: [], // Убирает все элементы управления
+					});
+
+					var placemark = new ymaps.Placemark([56.334612, 44.103409], {
+						balloonContent: "Борский стекольный завод",
+					});
+
+					map.geoObjects.add(placemark);
+				}
+			</script>
 		</footer>
 
 		<script src="./js/index.bundle.js"></script>
