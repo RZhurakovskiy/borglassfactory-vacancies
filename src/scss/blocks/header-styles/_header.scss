@@ -5,43 +5,42 @@
 	background-repeat: no-repeat;
 	height: 100vh;
 	position: relative;
-	border-radius: 0 0 60px 60px;
+	border-radius: 0 0 25px 25px;
 	overflow: hidden;
 }
 .header-shape {
-	background: rgba(22, 22, 22, 0.60);
+	background: rgba(22, 22, 22, 0.6);
 	position: absolute;
 	bottom: 0;
 	top: 0;
 	left: 0;
 	right: 0;
-	border-radius: 0 0 60px 60px;
+	border-radius: 0 0 25px 25px;
 }
 .header-svg {
 	position: absolute;
 
-	
 	left: 0;
-	
+
 	z-index: 1;
 	width: 400px;
 	height: 400px;
 }
 @keyframes float {
 	0% {
-		 transform: translate(0, 0);
+		transform: translate(0, 0);
 	}
 	50% {
-		 transform: translate(400px, 0);
+		transform: translate(400px, 0);
 	}
 	100% {
 		transform: translate(0, 0);
-  }
+	}
 }
 .header-svg {
 	animation: float 10s ease-in-out infinite;
 }
-@media(max-width: 1450px) {
+@media (max-width: 1450px) {
 	.header-svg {
 		top: 0;
 		left: -25%;
@@ -49,19 +48,18 @@
 		height: 620px;
 	}
 }
-@media(max-width: 1200px) {
+@media (max-width: 1200px) {
 	.header-svg {
 		top: 10%;
 		width: 420px;
 		height: 420px;
 	}
 }
-@media(max-width: 640px) {
+@media (max-width: 640px) {
 	.header {
 		height: 600px;
 	}
 	.header-svg {
-
 		top: 20%;
 		left: -20%;
 

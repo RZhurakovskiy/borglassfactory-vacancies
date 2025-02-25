@@ -1,257 +1,261 @@
 .vacancy-filter-mobile {
-  display: none;
+	display: none;
 }
 .vacancy-select {
-  margin-bottom: 20px;
-  width: 100%;
-  padding: 8px 12px;
-  border: 1px solid #161616;
-  border-radius: 20px;
-  background-color: #e8e8e8;
-  font-size: 16px;
-  color: #333;
+	margin-bottom: 20px;
+	width: 100%;
+	padding: 8px 12px;
+	border: 1px solid #161616;
+	border-radius: 20px;
+	background-color: #e8e8e8;
+	font-size: 16px;
+	color: #333;
 
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  outline: none;
-  cursor: pointer;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	outline: none;
+	cursor: pointer;
 
-  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6"><path fill="%23333" d="M0 0l5 6 5-6H0z"/></svg>');
-  background-repeat: no-repeat;
-  background-position: right 12px center;
+	background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6"><path fill="%23333" d="M0 0l5 6 5-6H0z"/></svg>');
+	background-repeat: no-repeat;
+	background-position: right 12px center;
 }
 
 .vacancy-select:focus {
-  border-color: #161616;
-  box-shadow: 0 0 5px rgba(60, 61, 61, 0.5);
+	border-color: #161616;
+	box-shadow: 0 0 5px rgba(60, 61, 61, 0.5);
 }
 
 .vacancy-select option {
-  padding: 8px;
+	padding: 8px;
 }
 
 .vacancy {
-  margin-top: 20px;
-  margin-bottom: 80px;
-  overflow: hidden;
-  border-radius: 71px;
-  background-color: #f6f6f6;
-  padding: 50px;
-  &__title {
-    font-weight: 700;
-    font-size: 48px;
-    color: #161616;
-    margin-bottom: 10px;
-  }
+	margin-top: 20px;
+	margin-bottom: 80px;
+	overflow: hidden;
+	border-radius: 25px;
+	background-color: #f6f6f6;
+	padding: 50px;
+	&__title {
+		font-weight: 700;
+		font-size: 48px;
+		color: #161616;
+		margin-bottom: 10px;
+	}
 
-  &__subtitile {
-    font-family: var(--font-family);
-    font-weight: 300;
-    font-size: 16px;
-    color: #000;
-    margin-bottom: 40px;
-  }
+	&__subtitile {
+		font-family: var(--font-family);
+		font-weight: 300;
+		font-size: 16px;
+		color: #000;
+		margin-bottom: 40px;
+	}
 }
 .vacancy-filter {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 250px);
-  gap: 20px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-bottom: 30px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 250px);
+	gap: 20px;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	margin-bottom: 30px;
 }
 .tab-button {
-  width: 250px;
-  height: 40px;
-  font-size: 14px;
-  border: 2px solid #161616;
-  border-radius: 35px;
-  transition: all 0.3s ease-in-out;
+	width: 250px;
+	height: 40px;
+	font-size: 14px;
+	border: 2px solid #161616;
+	border-radius: 35px;
+	transition: all 0.3s ease-in-out;
 }
 .tab-button.active {
-  background-color: #161616;
-  color: #f6f6f6;
+	background-color: #161616;
+	color: #f6f6f6;
 }
 
 .vacancy-card {
-  border-radius: 70px;
-  padding: 50px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  display: none;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-  background-color: #161616;
-  color: #e8e8e8;
-  background-image: linear-gradient(
-      to bottom right,
-      transparent 0%,
-      transparent 33.33%,
-      rgba(255, 0, 0, 0.5) 33.33%,
-      rgba(255, 0, 0, 0.5) 66.66%,
-      transparent 66.66%,
-      transparent 100%
-    ),
-    linear-gradient(to bottom right, transparent 0%, transparent 66.66%, rgba(255, 0, 0, 0.5) 66.66%, rgba(255, 0, 0, 0.5) 100%);
+	border-radius: 25px;
+	padding: 50px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
+	display: none;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+	background-color: #161616;
+	color: #e8e8e8;
+	background-image: linear-gradient(
+			to bottom right,
+			transparent 0%,
+			transparent 33.33%,
+			rgba(255, 0, 0, 0.5) 33.33%,
+			rgba(255, 0, 0, 0.5) 66.66%,
+			transparent 66.66%,
+			transparent 100%
+		),
+		linear-gradient(
+			to bottom right,
+			transparent 0%,
+			transparent 66.66%,
+			rgba(255, 0, 0, 0.5) 66.66%,
+			rgba(255, 0, 0, 0.5) 100%
+		);
 }
 
 .vacancy-card.active {
-  display: block;
-  opacity: 1;
+	display: block;
+	opacity: 1;
 }
 
 .vacancy-card__header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
 }
 
 .vacancy-card__number-block {
-  position: relative;
-  display: inline-block;
-  margin-right: 15px;
+	position: relative;
+	display: inline-block;
+	margin-right: 15px;
 }
 
 .vacancy-card__number {
-  position: relative;
-  z-index: 1;
-  font-family: "Koulen", sans-serif;
-  font-weight: 400;
-  font-size: 86px;
+	position: relative;
+	z-index: 1;
+	font-family: 'Koulen', sans-serif;
+	font-weight: 400;
+	font-size: 86px;
 }
 
 .vacancy-card__number-block::before {
-  content: "";
-  position: absolute;
-  right: 50%;
-  top: 58%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  background-color: red;
-  z-index: 0;
+	content: '';
+	position: absolute;
+	right: 50%;
+	top: 58%;
+	transform: translateY(-50%);
+	width: 40px;
+	height: 40px;
+	background-color: red;
+	z-index: 0;
 }
 
 .vacancy-card__title h4 {
-  margin: 0;
-  font-size: 48px;
-  font-weight: bold;
+	margin: 0;
+	font-size: 48px;
+	font-weight: bold;
 }
 
 .vacancy-card__title p {
-  line-height: 2rem;
-  font-size: 16px;
-  color: #e8e8e8;
+	line-height: 2rem;
+	font-size: 16px;
+	color: #e8e8e8;
 }
 
 .vacancy-card__description {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 15px;
 }
 
 .vacancy-card__description-item h4 {
-  margin-top: 0;
-  font-size: 1.2em;
-  font-weight: 600;
-  margin-bottom: 20px;
+	margin-top: 0;
+	font-size: 1.2em;
+	font-weight: 600;
+	margin-bottom: 20px;
 }
 
-
 .vacancy-card__description-list {
-  list-style-position: inside;
-  margin: 0;
-  padding: 0;
+	list-style-position: inside;
+	margin: 0;
+	padding: 0;
 }
 
 .vacancy-card__description-list li {
-  padding-bottom: 20px;
+	padding-bottom: 20px;
 }
 
 @media (max-width: 1300px) {
-  .vacancy {
-    &__title {
-      font-size: 38px;
-    }
-    &__subtitile {
-      font-size: 14px;
-    }
-  }
+	.vacancy {
+		&__title {
+			font-size: 38px;
+		}
+		&__subtitile {
+			font-size: 14px;
+		}
+	}
 }
 @media (max-width: 1259px) {
-  .vacancy-card {
-    padding: 70px;
-  }
+	.vacancy-card {
+		padding: 70px;
+	}
 }
 @media (max-width: 860px) {
-  .vacancy-card {
-    &__description-item:nth-child(2) {
-      padding-left: 0;
-      padding-right: 0;
-      border-top: 1px solid #fff;
-      border-bottom: 1px solid #fff;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      margin-bottom: 20px;
-    }
-  }
+	.vacancy-card {
+		&__description-item:nth-child(2) {
+			padding-left: 0;
+			padding-right: 0;
+			border-top: 1px solid #fff;
+			border-bottom: 1px solid #fff;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			margin-bottom: 20px;
+		}
+	}
 
-  .vacancy-filter {
-    grid-template-columns: repeat(auto-fill, 220px);
-  }
-  .tab-button {
-    width: 220px;
-    height: 40px;
-  }
+	.vacancy-filter {
+		grid-template-columns: repeat(auto-fill, 220px);
+	}
+	.tab-button {
+		width: 220px;
+		height: 40px;
+	}
 }
 
 @media (max-width: 768px) {
-  .vacancy-card__title h4 {
-    font-size: 18px;
-  }
-  .vacancy-card__title p {
-    font-size: 14px;
-  }
-  .vacancy-card__description {
-    grid-template-columns: 1fr;
-  }
+	.vacancy-card__title h4 {
+		font-size: 18px;
+	}
+	.vacancy-card__title p {
+		font-size: 14px;
+	}
+	.vacancy-card__description {
+		grid-template-columns: 1fr;
+	}
 }
 @media (max-width: 640px) {
-  
-  .vacancy-filter {
-    display: none;
-  }
-  .vacancy-filter-mobile {
-    display: block;
-  }
+	.vacancy-filter {
+		display: none;
+	}
+	.vacancy-filter-mobile {
+		display: block;
+	}
 }
 
 @media (max-width: 540px) {
-  .vacancy {
-    padding: 18px;
-  }
-  .vacancy-card {
-    padding: 35px;
-    &__number {
-      font-size: 64px;
-    }
-    &__number::after {
-      width: 40px;
-      height: 40px;
-    }
-    &__description-item h4 {
-      font-size: 16px;
-    }
-  }
+	.vacancy {
+		padding: 18px;
+	}
+	.vacancy-card {
+		padding: 35px;
+		&__number {
+			font-size: 64px;
+		}
+		&__number::after {
+			width: 40px;
+			height: 40px;
+		}
+		&__description-item h4 {
+			font-size: 16px;
+		}
+	}
 }
 
 @media (max-width: 420px) {
-  .vacancy-card__title h4 {
-    font-size: 16px;
-  }
-  .vacancy-card__title p {
-    font-size: 12px;
-  }
+	.vacancy-card__title h4 {
+		font-size: 16px;
+	}
+	.vacancy-card__title p {
+		font-size: 12px;
+	}
 }
